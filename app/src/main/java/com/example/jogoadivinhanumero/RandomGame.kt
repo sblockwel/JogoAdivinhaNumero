@@ -8,7 +8,7 @@ class RandomGame {
 
     fun checkNumber(number: Number): Boolean {
         if (sortedNumber == null) {
-            sortedNumber = Random.nextInt(100)
+            setSortedNumber()
         }
         return if (sortedNumber == number) {
             System.out.println("Numero valido")
@@ -29,5 +29,9 @@ class RandomGame {
 
         }
         return number
+    }
+
+    fun setSortedNumber() {
+        sortedNumber = Random.nextInt(100)
     }
 }

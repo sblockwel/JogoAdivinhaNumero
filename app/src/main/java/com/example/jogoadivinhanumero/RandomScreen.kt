@@ -78,9 +78,9 @@ class RandomScreen {
             GameState.Success -> {
                 gameState = GameState.Idle
                 showSuccessScreen()
+                game.setSortedNumber()
             }
         }
-
     }
 
     @Composable
@@ -122,7 +122,11 @@ class RandomScreen {
                 .background(Color(140, 16, 4))
         ) {
             Text(text = "Você errou o número", fontSize = 40.sp)
-            Text(text = "Dica: O número é $tipNumber que o informado", fontSize = 20.sp, color = Color.White)
+            Text(
+                text = "Dica: O número é $tipNumber que o informado",
+                fontSize = 20.sp,
+                color = Color.White
+            )
             Button(onClick = { canNavigateState = true })
             {
                 Text("Jogar novamente", style = MaterialTheme.typography.h6)
