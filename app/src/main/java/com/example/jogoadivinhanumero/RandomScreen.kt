@@ -92,7 +92,7 @@ class RandomScreen {
             verticalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterVertically),
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
-                .padding(all = 20.dp)
+                .padding(all = 8.dp)
                 .fillMaxSize()
                 .background(Color(14, 82, 32))
         ) {
@@ -117,7 +117,7 @@ class RandomScreen {
             verticalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterVertically),
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
-                .padding(all = 20.dp)
+                .padding(all = 8.dp)
                 .fillMaxSize()
                 .background(Color(140, 16, 4))
         ) {
